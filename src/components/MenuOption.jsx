@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import defaultImg from '../images/riceJokeBear.png';
+import React from 'react';
 
 export default function MenuOption({ handleModeSelect }) {
     
     return (
-        <div>
-            <select onChange={handleModeSelect} id='menu-select'>
+        <div className='pb-4'>
+            <select onChange={handleModeSelect} id='menu-select' className='cursor-pointer'>
                 <option value='선택된 모드가 없습니다'>
                     {' '}
                     모드를 선택해 주세요{' '}
